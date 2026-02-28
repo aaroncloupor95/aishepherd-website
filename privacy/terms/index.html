@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Ai Shepherd / Ai牧者</title>
+  <meta name="description" content="Terms of Service for Ai Shepherd (Ai牧者) mobile application." />
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent: #c9a84c;
+      --bg: #f8f6f1;
+      --surface: #ffffff;
+      --text: #2c2c2c;
+      --muted: #6b7280;
+      --border: #e5e0d5;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    .logo { font-size: 48px; margin-bottom: 12px; }
+    header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    header p { font-size: 14px; opacity: 0.75; }
+    .lang-bar {
+      background: var(--primary);
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding: 12px 24px;
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+    }
+    .lang-btn {
+      background: transparent; border: 1px solid rgba(255,255,255,0.4);
+      color: rgba(255,255,255,0.85); padding: 5px 14px; border-radius: 20px;
+      cursor: pointer; font-size: 13px; transition: all 0.2s;
+    }
+    .lang-btn:hover, .lang-btn.active {
+      background: var(--accent); border-color: var(--accent); color: #fff;
+    }
+    .meta-bar {
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;
+    }
+    .meta-item { text-align: center; }
+    .meta-item .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+    .meta-item .value { font-size: 14px; font-weight: 600; color: var(--text); margin-top: 2px; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 24px 60px; }
+    .section { margin-bottom: 32px; }
+    .section h2 {
+      font-size: 18px; font-weight: 700; color: var(--primary);
+      border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 14px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .section p { font-size: 15px; color: var(--text); margin-bottom: 12px; }
+    .highlight {
+      background: #f0f7ff; border-left: 4px solid var(--primary);
+      padding: 14px 16px; border-radius: 0 8px 8px 0; margin: 16px 0;
+      font-size: 14px; color: var(--text);
+    }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th { background: var(--primary); color: #fff; padding: 10px 14px; text-align: left; font-weight: 600; }
+    td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tr:nth-child(even) td { background: #fafaf8; }
+    .contact-box {
+      background: var(--primary); color: #fff; border-radius: var(--radius);
+      padding: 24px; text-align: center; margin-top: 32px;
+    }
+    .contact-box a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    footer {
+      text-align: center; padding: 24px; font-size: 12px; color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    [lang-section] { display: none; }
+    [lang-section].active { display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🕊️</div>
+  <h1>Ai Shepherd · Ai牧者</h1>
+  <p id="header-subtitle">Terms of Service</p>
+</header>
+
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="setLang('en')">English</button>
+  <button class="lang-btn" onclick="setLang('zh-CN')">简体中文</button>
+  <button class="lang-btn" onclick="setLang('zh-TW')">繁體中文</button>
+  <button class="lang-btn" onclick="setLang('es')">Español</button>
+  <button class="lang-btn" onclick="setLang('fr')">Français</button>
+  <button class="lang-btn" onclick="setLang('de')">Deutsch</button>
+  <button class="lang-btn" onclick="setLang('pt')">Português</button>
+  <button class="lang-btn" onclick="setLang('ko')">한국어</button>
+  <button class="lang-btn" onclick="setLang('ja')">日本語</button>
+</div>
+
+<div class="meta-bar">
+  <div class="meta-item"><div class="label">App Name</div><div class="value">Ai Shepherd (Ai牧者)</div></div>
+  <div class="meta-item"><div class="label">Effective Date</div><div class="value">March 1, 2026</div></div>
+  <div class="meta-item"><div class="label">Last Updated</div><div class="value">February 28, 2026</div></div>
+  <div class="meta-item"><div class="label">Contact</div><div class="value"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></div></div>
+</div>
+
+<main>
+
+<!-- ===== ENGLISH ===== -->
+<div lang-section="en" class="active">
+  <div class="section">
+    <h2>📋 Agreement to Terms</h2>
+    <p>Welcome to Ai Shepherd ("we", "our", or "the App"). By downloading, installing, or using Ai Shepherd, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+    <div class="highlight">Core features including Bible reading, AI conversation, and daily devotionals are available without an account. Account registration is optional and only required for cross-device sync and subscription features.</div>
+  </div>
+  <div class="section">
+    <h2>📖 Description of Service</h2>
+    <p>Ai Shepherd is a faith-based mobile application that provides AI-powered Bible study assistance, daily devotional content, spiritual companionship, and Scripture reading tools. The App is designed to support personal spiritual growth and does not represent any specific church, denomination, or religious organization.</p>
+  </div>
+  <div class="section">
+    <h2>✅ Acceptable Use</h2>
+    <p>You agree to use Ai Shepherd only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+    <table>
+      <tr><th>Prohibited Action</th><th>Reason</th></tr>
+      <tr><td>Use the App to harass, abuse, or harm others</td><td>Violates community standards</td></tr>
+      <tr><td>Attempt to reverse engineer or extract the App's source code</td><td>Intellectual property protection</td></tr>
+      <tr><td>Use automated tools to scrape or abuse the AI features</td><td>Service integrity</td></tr>
+      <tr><td>Share your account credentials with others</td><td>Account security</td></tr>
+      <tr><td>Use the App for commercial purposes without permission</td><td>License restrictions</td></tr>
+    </table>
+  </div>
+  <div class="section">
+    <h2>🤖 AI-Generated Content Disclaimer</h2>
+    <p>Ai Shepherd uses artificial intelligence to generate devotional content, Bible study responses, and spiritual reflections. You acknowledge and agree that:</p>
+    <div class="highlight">AI-generated content is provided for personal spiritual enrichment only. It does not constitute theological advice, pastoral counseling, or official church doctrine. Always consult a qualified pastor or spiritual leader for important spiritual decisions.</div>
+    <p>We strive to ensure AI responses are grounded in Scripture, but we cannot guarantee the accuracy, completeness, or theological precision of all AI-generated content.</p>
+  </div>
+  <div class="section">
+    <h2>💳 Subscriptions and Payments</h2>
+    <p>Ai Shepherd offers free and premium subscription tiers. Premium features require a paid subscription processed through Stripe. By subscribing, you agree to the following:</p>
+    <table>
+      <tr><th>Item</th><th>Details</th></tr>
+      <tr><td>Billing</td><td>Subscriptions are billed on a recurring basis (monthly or annually)</td></tr>
+      <tr><td>Cancellation</td><td>You may cancel at any time; access continues until the end of the billing period</td></tr>
+      <tr><td>Refunds</td><td>Refunds are handled on a case-by-case basis; contact us within 7 days of charge</td></tr>
+      <tr><td>Price changes</td><td>We will notify you at least 30 days before any price increase</td></tr>
+    </table>
+  </div>
+  <div class="section">
+    <h2>🔒 Intellectual Property</h2>
+    <p>The Ai Shepherd app, including its design, code, logo, and original content, is owned by the Ai Shepherd team and protected by applicable intellectual property laws. Scripture quotations are used under fair use provisions and remain the property of their respective publishers.</p>
+    <p>You retain ownership of any personal content you create within the App (notes, prayer journal entries). By using the App, you grant us a limited license to store and sync this content to provide the service.</p>
+  </div>
+  <div class="section">
+    <h2>⚠️ Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, Ai Shepherd and its team shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App. The App is provided "as is" without warranties of any kind.</p>
+  </div>
+  <div class="section">
+    <h2>🔄 Changes to Terms</h2>
+    <p>We may update these Terms from time to time. We will notify you of significant changes through the App or by email. Continued use of the App after changes are posted constitutes acceptance of the updated Terms.</p>
+  </div>
+  <div class="section">
+    <h2>⚖️ Governing Law</h2>
+    <p>These Terms are governed by applicable international law. Any disputes shall be resolved through good-faith negotiation, and if unresolved, through binding arbitration.</p>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">Questions about these Terms?</p>
+    <p>Contact us at <a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+    <p style="font-size:13px;margin-top:8px;opacity:0.8;">We aim to respond within 5 business days.</p>
+  </div>
+</div>
+
+<!-- ===== 简体中文 ===== -->
+<div lang-section="zh-CN">
+  <div class="section">
+    <h2>📋 条款协议</h2>
+    <p>欢迎使用 Ai牧者（"我们"或"本应用"）。通过下载、安装或使用 Ai牧者，您同意受本服务条款（"条款"）的约束。如果您不同意这些条款，请不要使用本应用。</p>
+    <div class="highlight">包括圣经阅读、AI对话和每日灵粮在内的核心功能无需注册账号即可使用。账号注册为可选项，仅用于跨设备同步和订阅功能。</div>
+  </div>
+  <div class="section">
+    <h2>📖 服务说明</h2>
+    <p>Ai牧者是一款基于信仰的移动应用，提供 AI 驱动的圣经学习辅助、每日灵粮内容、灵性陪伴和经文阅读工具。本应用旨在支持个人灵性成长，不代表任何特定教会、宗派或宗教组织。</p>
+  </div>
+  <div class="section">
+    <h2>✅ 可接受的使用方式</h2>
+    <p>您同意仅将 Ai牧者 用于合法目的，并遵守本条款。您同意不得：</p>
+    <table>
+      <tr><th>禁止行为</th><th>原因</th></tr>
+      <tr><td>利用本应用骚扰、虐待或伤害他人</td><td>违反社区准则</td></tr>
+      <tr><td>尝试逆向工程或提取应用源代码</td><td>知识产权保护</td></tr>
+      <tr><td>使用自动化工具滥用 AI 功能</td><td>服务完整性</td></tr>
+      <tr><td>与他人共享账号凭据</td><td>账号安全</td></tr>
+      <tr><td>未经许可将本应用用于商业目的</td><td>许可证限制</td></tr>
+    </table>
+  </div>
+  <div class="section">
+    <h2>🤖 AI 生成内容免责声明</h2>
+    <p>Ai牧者 使用人工智能生成灵修内容、圣经学习回应和灵性反思。您承认并同意：</p>
+    <div class="highlight">AI 生成的内容仅供个人灵性成长使用，不构成神学建议、牧灵辅导或官方教会教义。对于重要的灵性决定，请始终咨询合格的牧师或属灵领袖。</div>
+    <p>我们努力确保 AI 回应以圣经为基础，但无法保证所有 AI 生成内容的准确性、完整性或神学精确性。</p>
+  </div>
+  <div class="section">
+    <h2>💳 订阅与付款</h2>
+    <p>Ai牧者 提供免费和高级订阅套餐。高级功能需要通过 Stripe 处理的付费订阅。订阅即表示您同意以下内容：</p>
+    <table>
+      <tr><th>项目</th><th>详情</th></tr>
+      <tr><td>计费方式</td><td>订阅按周期计费（月付或年付）</td></tr>
+      <tr><td>取消</td><td>您可随时取消；访问权限持续至计费周期结束</td></tr>
+      <tr><td>退款</td><td>退款按具体情况处理；请在扣款后 7 天内联系我们</td></tr>
+      <tr><td>价格变更</td><td>任何价格上涨前至少提前 30 天通知您</td></tr>
+    </table>
+  </div>
+  <div class="section">
+    <h2>🔒 知识产权</h2>
+    <p>Ai牧者 应用，包括其设计、代码、标志和原创内容，归 Ai牧者 团队所有，受适用知识产权法律保护。圣经引文依据合理使用条款使用，版权归各自出版商所有。</p>
+    <p>您保留在应用内创建的个人内容（笔记、祷告日记条目）的所有权。使用本应用即表示您授予我们有限许可，以存储和同步此内容来提供服务。</p>
+  </div>
+  <div class="section">
+    <h2>⚠️ 责任限制</h2>
+    <p>在法律允许的最大范围内，Ai牧者 及其团队对因您使用本应用而产生的任何间接、附带、特殊或后果性损害不承担责任。本应用按"现状"提供，不提供任何形式的保证。</p>
+  </div>
+  <div class="section">
+    <h2>🔄 条款变更</h2>
+    <p>我们可能会不时更新这些条款。我们将通过应用或电子邮件通知您重大变更。在变更发布后继续使用本应用即表示接受更新后的条款。</p>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">对本条款有疑问？</p>
+    <p>请联系我们：<a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+    <p style="font-size:13px;margin-top:8px;opacity:0.8;">我们将在 5 个工作日内回复。</p>
+  </div>
+</div>
+
+<!-- ===== 繁體中文 ===== -->
+<div lang-section="zh-TW">
+  <div class="section">
+    <h2>📋 條款協議</h2>
+    <p>歡迎使用 Ai牧者（「我們」或「本應用程式」）。透過下載、安裝或使用 Ai牧者，您同意受本服務條款（「條款」）的約束。如果您不同意這些條款，請勿使用本應用程式。</p>
+    <div class="highlight">包括聖經閱讀、AI對話和每日靈糧在內的核心功能無需註冊帳號即可使用。帳號註冊為選填項目，僅用於跨裝置同步和訂閱功能。</div>
+  </div>
+  <div class="section">
+    <h2>📖 服務說明</h2>
+    <p>Ai牧者是一款基於信仰的行動應用程式，提供 AI 驅動的聖經學習輔助、每日靈糧內容、靈性陪伴和經文閱讀工具。本應用程式旨在支持個人靈性成長，不代表任何特定教會、宗派或宗教組織。</p>
+  </div>
+  <div class="section">
+    <h2>🤖 AI 生成內容免責聲明</h2>
+    <div class="highlight">AI 生成的內容僅供個人靈性成長使用，不構成神學建議、牧靈輔導或官方教會教義。對於重要的靈性決定，請務必諮詢合格的牧師或屬靈領袖。</div>
+  </div>
+  <div class="section">
+    <h2>💳 訂閱與付款</h2>
+    <table>
+      <tr><th>項目</th><th>詳情</th></tr>
+      <tr><td>計費方式</td><td>訂閱按週期計費（月付或年付）</td></tr>
+      <tr><td>取消</td><td>您可隨時取消；存取權限持續至計費週期結束</td></tr>
+      <tr><td>退款</td><td>退款按具體情況處理；請在扣款後 7 天內聯絡我們</td></tr>
+    </table>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">對本條款有疑問？</p>
+    <p>請聯絡我們：<a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ===== ESPAÑOL ===== -->
+<div lang-section="es">
+  <div class="section">
+    <h2>📋 Acuerdo de Términos</h2>
+    <p>Bienvenido a Ai Shepherd ("nosotros" o "la Aplicación"). Al descargar, instalar o usar Ai Shepherd, usted acepta estar sujeto a estos Términos de Servicio. Si no está de acuerdo con estos Términos, por favor no use la Aplicación.</p>
+    <div class="highlight">Las funciones principales, incluyendo la lectura bíblica, la conversación con IA y los devocionales diarios, están disponibles sin crear una cuenta. El registro de cuenta es opcional y solo se requiere para la sincronización entre dispositivos y las funciones de suscripción.</div>
+  </div>
+  <div class="section">
+    <h2>🤖 Descargo de Responsabilidad del Contenido Generado por IA</h2>
+    <div class="highlight">El contenido generado por IA se proporciona únicamente para el enriquecimiento espiritual personal. No constituye asesoramiento teológico, consejería pastoral ni doctrina oficial de ninguna iglesia. Siempre consulte a un pastor calificado para decisiones espirituales importantes.</div>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">¿Preguntas sobre estos Términos?</p>
+    <p>Contáctenos en <a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ===== FRANÇAIS ===== -->
+<div lang-section="fr">
+  <div class="section">
+    <h2>📋 Accord sur les Conditions</h2>
+    <p>Bienvenue sur Ai Shepherd ("nous" ou "l'Application"). En téléchargeant, installant ou utilisant Ai Shepherd, vous acceptez d'être lié par ces Conditions d'Utilisation. Si vous n'acceptez pas ces Conditions, veuillez ne pas utiliser l'Application.</p>
+    <div class="highlight">Les fonctionnalités principales, notamment la lecture biblique, la conversation avec l'IA et les dévotions quotidiennes, sont disponibles sans créer de compte. L'inscription est facultative et uniquement requise pour la synchronisation entre appareils et les fonctionnalités d'abonnement.</div>
+  </div>
+  <div class="section">
+    <h2>🤖 Avertissement sur le Contenu Généré par l'IA</h2>
+    <div class="highlight">Le contenu généré par l'IA est fourni uniquement pour l'enrichissement spirituel personnel. Il ne constitue pas un conseil théologique, un accompagnement pastoral ou une doctrine officielle d'église. Consultez toujours un pasteur qualifié pour les décisions spirituelles importantes.</div>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">Questions sur ces Conditions ?</p>
+    <p>Contactez-nous à <a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ===== DEUTSCH ===== -->
+<div lang-section="de">
+  <div class="section">
+    <h2>📋 Zustimmung zu den Bedingungen</h2>
+    <p>Willkommen bei Ai Shepherd ("wir" oder "die App"). Durch das Herunterladen, Installieren oder Verwenden von Ai Shepherd stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie diesen Bedingungen nicht zustimmen, verwenden Sie die App bitte nicht.</p>
+    <div class="highlight">Kernfunktionen wie Bibellesen, KI-Gespräche und tägliche Andachten sind ohne Konto verfügbar. Die Kontoregistrierung ist optional und nur für geräteübergreifende Synchronisierung und Abonnementfunktionen erforderlich.</div>
+  </div>
+  <div class="section">
+    <h2>🤖 Haftungsausschluss für KI-generierte Inhalte</h2>
+    <div class="highlight">KI-generierte Inhalte dienen ausschließlich der persönlichen geistlichen Erbauung. Sie stellen keine theologische Beratung, seelsorgerliche Begleitung oder offizielle Kirchenlehre dar. Konsultieren Sie bei wichtigen geistlichen Entscheidungen stets einen qualifizierten Pastor.</div>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">Fragen zu diesen Bedingungen?</p>
+    <p>Kontaktieren Sie uns unter <a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ===== PORTUGUÊS ===== -->
+<div lang-section="pt">
+  <div class="section">
+    <h2>📋 Acordo com os Termos</h2>
+    <p>Bem-vindo ao Ai Shepherd ("nós" ou "o Aplicativo"). Ao baixar, instalar ou usar o Ai Shepherd, você concorda em estar vinculado a estes Termos de Serviço. Se você não concordar com estes Termos, por favor não use o Aplicativo.</p>
+    <div class="highlight">Os recursos principais, incluindo leitura bíblica, conversa com IA e devocionais diários, estão disponíveis sem criar uma conta. O registro de conta é opcional e apenas necessário para sincronização entre dispositivos e recursos de assinatura.</div>
+  </div>
+  <div class="section">
+    <h2>🤖 Isenção de Responsabilidade sobre Conteúdo Gerado por IA</h2>
+    <div class="highlight">O conteúdo gerado por IA é fornecido apenas para enriquecimento espiritual pessoal. Não constitui aconselhamento teológico, orientação pastoral ou doutrina oficial de qualquer igreja. Sempre consulte um pastor qualificado para decisões espirituais importantes.</div>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">Dúvidas sobre estes Termos?</p>
+    <p>Entre em contato: <a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ===== 한국어 ===== -->
+<div lang-section="ko">
+  <div class="section">
+    <h2>📋 약관 동의</h2>
+    <p>Ai Shepherd("당사" 또는 "앱")에 오신 것을 환영합니다. Ai Shepherd를 다운로드, 설치 또는 사용함으로써 귀하는 이 서비스 약관에 동의하게 됩니다. 이 약관에 동의하지 않으시면 앱을 사용하지 마십시오.</p>
+    <div class="highlight">성경 읽기, AI 대화, 매일 묵상 등 핵심 기능은 계정 없이 사용할 수 있습니다. 계정 등록은 선택 사항이며 기기 간 동기화 및 구독 기능에만 필요합니다.</div>
+  </div>
+  <div class="section">
+    <h2>🤖 AI 생성 콘텐츠 면책 조항</h2>
+    <div class="highlight">AI가 생성한 콘텐츠는 개인적인 영적 성장을 위해서만 제공됩니다. 신학적 조언, 목회 상담 또는 공식 교회 교리를 구성하지 않습니다. 중요한 영적 결정을 위해서는 항상 자격을 갖춘 목사나 영적 지도자와 상담하십시오.</div>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">약관에 대한 질문이 있으신가요?</p>
+    <p><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a>으로 문의하세요</p>
+  </div>
+</div>
+
+<!-- ===== 日本語 ===== -->
+<div lang-section="ja">
+  <div class="section">
+    <h2>📋 利用規約への同意</h2>
+    <p>Ai Shepherd（「当社」または「本アプリ」）へようこそ。Ai Shepherdをダウンロード、インストール、または使用することにより、本利用規約に同意したものとみなされます。本規約に同意されない場合は、本アプリをご使用にならないでください。</p>
+    <div class="highlight">聖書の読書、AI会話、毎日のデボーションなどの主要機能は、アカウントなしでご利用いただけます。アカウント登録は任意であり、デバイス間の同期とサブスクリプション機能にのみ必要です。</div>
+  </div>
+  <div class="section">
+    <h2>🤖 AI生成コンテンツの免責事項</h2>
+    <div class="highlight">AI生成コンテンツは個人の霊的成長のためにのみ提供されます。神学的アドバイス、牧会カウンセリング、または公式の教会教義を構成するものではありません。重要な霊的決断については、必ず資格のある牧師または霊的指導者に相談してください。</div>
+  </div>
+  <div class="contact-box">
+    <p style="font-size:16px;font-weight:700;margin-bottom:8px;">本規約についてご質問がありますか？</p>
+    <p><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a> までお問い合わせください</p>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <p>© 2026 Ai Shepherd (Ai牧者). All rights reserved.</p>
+  <p style="margin-top:6px;"><a href="/privacy" style="color:var(--muted);">Privacy Policy</a> · <a href="/terms" style="color:var(--muted);">Terms of Service</a></p>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll('[lang-section]');
+  const buttons = document.querySelectorAll('.lang-btn');
+  const subtitles = {
+    'en': 'Terms of Service', 'zh-CN': '服务条款', 'zh-TW': '服務條款',
+    'es': 'Términos de Servicio', 'fr': "Conditions d'Utilisation",
+    'de': 'Nutzungsbedingungen', 'pt': 'Termos de Serviço',
+    'ko': '서비스 약관', 'ja': '利用規約'
+  };
+  function setLang(lang) {
+    sections.forEach(s => {
+      s.classList.toggle('active', s.getAttribute('lang-section') === lang);
+    });
+    buttons.forEach((b, i) => {
+      const langs = ['en','zh-CN','zh-TW','es','fr','de','pt','ko','ja'];
+      b.classList.toggle('active', langs[i] === lang);
+    });
+    document.getElementById('header-subtitle').textContent = subtitles[lang] || 'Terms of Service';
+  }
+  // Auto-detect browser language
+  const browserLang = navigator.language || navigator.userLanguage || 'en';
+  if (browserLang.startsWith('zh-TW') || browserLang.startsWith('zh-HK')) setLang('zh-TW');
+  else if (browserLang.startsWith('zh')) setLang('zh-CN');
+  else if (browserLang.startsWith('es')) setLang('es');
+  else if (browserLang.startsWith('fr')) setLang('fr');
+  else if (browserLang.startsWith('de')) setLang('de');
+  else if (browserLang.startsWith('pt')) setLang('pt');
+  else if (browserLang.startsWith('ko')) setLang('ko');
+  else if (browserLang.startsWith('ja')) setLang('ja');
+</script>
+</body>
+</html>

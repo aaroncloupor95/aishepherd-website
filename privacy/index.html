@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Ai Shepherd / Ai牧者</title>
+  <meta name="description" content="Privacy Policy for Ai Shepherd (Ai牧者) mobile application." />
+  <style>
+    :root {
+      --primary: #1a4a7a;
+      --primary-light: #2563a8;
+      --accent: #c9a227;
+      --bg: #f9f7f4;
+      --surface: #ffffff;
+      --text: #1a1a2e;
+      --muted: #5a6070;
+      --border: #e2ddd6;
+      --radius: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, #0d2d52 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .logo-icon {
+      width: 52px; height: 52px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+    }
+    .logo-name { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }
+    header h1 { font-size: clamp(24px, 5vw, 36px); font-weight: 700; margin-bottom: 8px; }
+    header p { font-size: 15px; opacity: 0.75; }
+
+    /* ── Language Switcher ── */
+    .lang-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .lang-btn:hover { border-color: var(--primary-light); color: var(--primary-light); }
+    .lang-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ── Main Layout ── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* ── Meta Info ── */
+    .meta-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .meta-item { flex: 1; min-width: 160px; }
+    .meta-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-bottom: 4px; }
+    .meta-value { font-size: 14px; font-weight: 600; color: var(--text); }
+
+    /* ── Sections ── */
+    section { margin-bottom: 40px; }
+    section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    section h2 .icon { font-size: 20px; }
+    section p { color: var(--text); margin-bottom: 14px; font-size: 15px; }
+    section p:last-child { margin-bottom: 0; }
+
+    /* ── Table ── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 16px 0;
+      background: var(--surface);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .data-table th {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .data-table td {
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      color: var(--text);
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:nth-child(even) td { background: #faf9f7; }
+
+    /* ── Highlight Box ── */
+    .highlight {
+      background: #eef4ff;
+      border-left: 4px solid var(--primary-light);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    /* ── Contact ── */
+    .contact-box {
+      background: linear-gradient(135deg, var(--primary) 0%, #0d2d52 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 28px 28px;
+      text-align: center;
+    }
+    .contact-box h2 { color: #fff; border-bottom-color: var(--accent); justify-content: center; }
+    .contact-box p { color: rgba(255,255,255,0.85); }
+    .contact-box a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Language Sections ── */
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+
+    @media (max-width: 600px) {
+      header { padding: 36px 16px 28px; }
+      main { padding: 28px 16px 60px; }
+      .data-table { font-size: 13px; }
+      .data-table th, .data-table td { padding: 10px 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header>
+  <div class="logo-wrap">
+    <div class="logo-icon">🕊️</div>
+    <span class="logo-name">Ai Shepherd · Ai牧者</span>
+  </div>
+  <h1 id="page-title">Privacy Policy</h1>
+  <p id="page-subtitle">Effective March 1, 2026 · Last updated February 27, 2026</p>
+</header>
+
+<!-- ── Language Switcher ── -->
+<div class="lang-bar">
+  <button class="lang-btn active" onclick="switchLang('en')">English</button>
+  <button class="lang-btn" onclick="switchLang('zh-hans')">简体中文</button>
+  <button class="lang-btn" onclick="switchLang('zh-hant')">繁體中文</button>
+  <button class="lang-btn" onclick="switchLang('es')">Español</button>
+  <button class="lang-btn" onclick="switchLang('fr')">Français</button>
+  <button class="lang-btn" onclick="switchLang('de')">Deutsch</button>
+  <button class="lang-btn" onclick="switchLang('pt')">Português</button>
+  <button class="lang-btn" onclick="switchLang('ko')">한국어</button>
+  <button class="lang-btn" onclick="switchLang('ja')">日本語</button>
+</div>
+
+<main>
+
+<!-- ════════════════════════════════════════
+     ENGLISH
+════════════════════════════════════════ -->
+<div id="lang-en" class="lang-section active">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">App Name</div><div class="meta-value">Ai Shepherd (Ai牧者)</div></div>
+    <div class="meta-item"><div class="meta-label">Effective Date</div><div class="meta-value">March 1, 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Last Updated</div><div class="meta-value">February 27, 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Contact</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> Overview</h2>
+    <p>Ai Shepherd ("we", "our", or "the App") is a faith-based mobile application providing AI-powered Bible study, daily devotionals, and spiritual companionship. We are committed to protecting your privacy and handling your personal information with transparency and care.</p>
+    <p>This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data. By using Ai Shepherd, you agree to the practices described in this policy.</p>
+    <div class="highlight">Core features such as Bible reading, AI conversation, and daily devotionals are available without creating an account. Account registration is optional and only required for cross-device sync and subscription features.</div>
+  </section>
+
+  <section>
+    <h2><span class="icon">📦</span> Information We Collect</h2>
+    <p>We collect only the information necessary to provide and improve our services. The following table summarizes what we collect and why:</p>
+    <table class="data-table">
+      <thead><tr><th>Category</th><th>Data Collected</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Account Data</strong> (optional)</td><td>Email address, display name, login method (email/Apple/Google)</td><td>Account creation and authentication</td></tr>
+        <tr><td><strong>Content Data</strong></td><td>Saved verses, verse notes, prayer journal entries, AI conversation history</td><td>Sync across devices when logged in; stored locally when not logged in</td></tr>
+        <tr><td><strong>Usage Preferences</strong></td><td>Language, theme (light/dark), font size, notification settings, voice preferences</td><td>Personalize your experience</td></tr>
+        <tr><td><strong>Push Token</strong></td><td>Device push notification token</td><td>Deliver daily devotional reminders (only if you enable notifications)</td></tr>
+        <tr><td><strong>Subscription Data</strong></td><td>Subscription plan, expiry date, payment status</td><td>Manage premium feature access</td></tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> collect precise location data, contacts, photos, or any sensitive personal information beyond what is listed above.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">⚙️</span> How We Use Your Information</h2>
+    <p>Your information is used solely to operate and improve Ai Shepherd. Specifically, we use your data to provide AI-generated devotional content and Bible study responses, synchronize your saved content across devices when you are signed in, send daily devotional push notifications if you have enabled them, manage your subscription status and feature access, and improve the quality and accuracy of our AI responses over time.</p>
+    <p>We do <strong>not</strong> sell, rent, or share your personal information with third parties for marketing purposes. We do not display advertisements within the App.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🤝</span> Third-Party Services</h2>
+    <p>Ai Shepherd integrates with the following third-party services to deliver its features. Each service operates under its own privacy policy:</p>
+    <table class="data-table">
+      <thead><tr><th>Service</th><th>Purpose</th><th>Data Shared</th></tr></thead>
+      <tbody>
+        <tr><td>OpenAI / LLM Provider</td><td>AI conversation and devotional generation</td><td>Your message text (not linked to identity)</td></tr>
+        <tr><td>Microsoft Azure</td><td>Text-to-speech voice reading</td><td>Text content to be read aloud</td></tr>
+        <tr><td>Expo (Push Notifications)</td><td>Deliver push notifications</td><td>Device push token</td></tr>
+        <tr><td>Apple Sign In</td><td>Authentication</td><td>Apple-provided user identifier and email</td></tr>
+        <tr><td>Google Sign In</td><td>Authentication</td><td>Google-provided user identifier and email</td></tr>
+        <tr><td>Stripe</td><td>Subscription payment processing</td><td>Payment details (handled entirely by Stripe)</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔒</span> Data Security</h2>
+    <p>We implement industry-standard security measures to protect your information. All data transmitted between the App and our servers is encrypted using HTTPS/TLS. Passwords are stored using bcrypt hashing and are never stored in plain text. Access to our servers and databases is restricted to authorized personnel only.</p>
+    <p>While we strive to protect your data, no method of electronic transmission or storage is 100% secure. We encourage you to use a strong, unique password for your account.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🧒</span> Children's Privacy</h2>
+    <p>Ai Shepherd is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us immediately and we will delete such information.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✅</span> Your Rights</h2>
+    <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+    <table class="data-table">
+      <thead><tr><th>Right</th><th>How to Exercise</th></tr></thead>
+      <tbody>
+        <tr><td>Access your data</td><td>Contact us at aaroncloupor@gmail.com</td></tr>
+        <tr><td>Correct inaccurate data</td><td>Update via Settings > Profile in the App</td></tr>
+        <tr><td>Delete your account and data</td><td>Settings > Account > Delete Account</td></tr>
+        <tr><td>Disable push notifications</td><td>Settings > Notifications in the App or device Settings</td></tr>
+        <tr><td>Data portability</td><td>Contact us at aaroncloupor@gmail.com</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we make significant changes, we will notify you through the App or by email. The "Last Updated" date at the top of this page will always reflect the most recent revision. Continued use of the App after changes are posted constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us at:</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+    <p style="margin-top:8px; font-size:14px; opacity:0.75;">We aim to respond to all inquiries within 5 business days.</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     简体中文
+════════════════════════════════════════ -->
+<div id="lang-zh-hans" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">应用名称</div><div class="meta-value">Ai牧者 (Ai Shepherd)</div></div>
+    <div class="meta-item"><div class="meta-label">生效日期</div><div class="meta-value">2026年3月1日</div></div>
+    <div class="meta-item"><div class="meta-label">最后更新</div><div class="meta-value">2026年2月27日</div></div>
+    <div class="meta-item"><div class="meta-label">联系方式</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> 概述</h2>
+    <p>Ai牧者（以下简称"本应用"）是一款以信仰为核心的移动应用，提供AI驱动的圣经研读、每日灵粮和属灵陪伴服务。我们致力于保护您的隐私，以透明、负责任的方式处理您的个人信息。</p>
+    <p>本隐私政策说明我们收集哪些信息、如何使用这些信息，以及您对自己数据所享有的权利。使用Ai牧者即表示您同意本政策所描述的做法。</p>
+    <div class="highlight">圣经阅读、AI对话、每日灵粮等核心功能无需注册账号即可使用。账号注册为可选项，仅在需要跨设备同步或订阅高级功能时才需要。</div>
+  </section>
+
+  <section>
+    <h2><span class="icon">📦</span> 我们收集的信息</h2>
+    <p>我们仅收集提供和改善服务所必要的信息：</p>
+    <table class="data-table">
+      <thead><tr><th>类别</th><th>收集的数据</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td><strong>账号数据</strong>（可选）</td><td>电子邮件、显示名称、登录方式（邮箱/Apple/Google）</td><td>账号创建与身份验证</td></tr>
+        <tr><td><strong>内容数据</strong></td><td>收藏经文、经文笔记、祷告日记、AI对话历史</td><td>已登录时跨设备同步；未登录时仅存储在本地</td></tr>
+        <tr><td><strong>使用偏好</strong></td><td>语言、主题（亮色/暗色）、字体大小、通知设置、语音偏好</td><td>个性化您的使用体验</td></tr>
+        <tr><td><strong>推送令牌</strong></td><td>设备推送通知令牌</td><td>发送每日灵粮提醒（仅在您开启通知时）</td></tr>
+        <tr><td><strong>订阅数据</strong></td><td>订阅计划、到期日期、支付状态</td><td>管理高级功能访问权限</td></tr>
+      </tbody>
+    </table>
+    <p>我们<strong>不会</strong>收集精确位置信息、通讯录、照片或上述范围以外的任何敏感个人信息。</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">⚙️</span> 信息使用方式</h2>
+    <p>您的信息仅用于运营和改善Ai牧者。具体而言，我们使用您的数据来提供AI生成的灵粮内容和圣经研读回应、在您登录时跨设备同步您保存的内容、在您开启通知的情况下发送每日灵粮推送提醒、管理您的订阅状态和功能访问权限，以及持续提升AI回应的质量和准确性。</p>
+    <p>我们<strong>不会</strong>出售、出租或以任何营销目的向第三方共享您的个人信息。应用内不含任何广告。</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🤝</span> 第三方服务</h2>
+    <p>Ai牧者集成了以下第三方服务以实现其功能，每项服务均遵循其自身的隐私政策：</p>
+    <table class="data-table">
+      <thead><tr><th>服务</th><th>用途</th><th>共享的数据</th></tr></thead>
+      <tbody>
+        <tr><td>OpenAI / LLM 服务商</td><td>AI对话与灵粮生成</td><td>您的消息文本（不与身份关联）</td></tr>
+        <tr><td>Microsoft Azure</td><td>文字转语音朗读</td><td>待朗读的文本内容</td></tr>
+        <tr><td>Expo（推送通知）</td><td>推送通知投递</td><td>设备推送令牌</td></tr>
+        <tr><td>Apple Sign In</td><td>身份验证</td><td>Apple提供的用户标识符和邮箱</td></tr>
+        <tr><td>Google Sign In</td><td>身份验证</td><td>Google提供的用户标识符和邮箱</td></tr>
+        <tr><td>Stripe</td><td>订阅支付处理</td><td>支付信息（完全由Stripe处理）</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔒</span> 数据安全</h2>
+    <p>我们采用行业标准的安全措施保护您的信息。应用与服务器之间的所有数据传输均通过HTTPS/TLS加密。密码使用bcrypt哈希存储，绝不以明文保存。服务器和数据库的访问权限仅限于经授权的人员。</p>
+    <p>尽管我们尽力保护您的数据，但没有任何电子传输或存储方式能够保证100%的安全性。我们建议您为账号设置强密码。</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🧒</span> 儿童隐私</h2>
+    <p>Ai牧者不面向13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。如果您认为13岁以下的儿童向我们提供了个人信息，请立即联系我们，我们将删除相关信息。</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">✅</span> 您的权利</h2>
+    <table class="data-table">
+      <thead><tr><th>权利</th><th>行使方式</th></tr></thead>
+      <tbody>
+        <tr><td>访问您的数据</td><td>发送邮件至 aaroncloupor@gmail.com</td></tr>
+        <tr><td>更正不准确的数据</td><td>在应用的"设置 > 个人资料"中更新</td></tr>
+        <tr><td>删除账号和数据</td><td>设置 > 账号 > 删除账号</td></tr>
+        <tr><td>关闭推送通知</td><td>应用内"设置 > 通知"或设备系统设置</td></tr>
+        <tr><td>数据可携带性</td><td>发送邮件至 aaroncloupor@gmail.com</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔄</span> 政策变更</h2>
+    <p>我们可能会不时更新本隐私政策。当我们进行重大变更时，将通过应用内通知或电子邮件告知您。本页面顶部的"最后更新"日期将始终反映最新修订版本。变更发布后继续使用本应用，即表示您接受更新后的政策。</p>
+  </section>
+
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> 联系我们</h2>
+    <p>如果您对本隐私政策或您的个人数据有任何疑问、顾虑或请求，请通过以下方式联系我们：</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+    <p style="margin-top:8px; font-size:14px; opacity:0.75;">我们将在5个工作日内回复您的咨询。</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     繁體中文
+════════════════════════════════════════ -->
+<div id="lang-zh-hant" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">應用名稱</div><div class="meta-value">Ai牧者 (Ai Shepherd)</div></div>
+    <div class="meta-item"><div class="meta-label">生效日期</div><div class="meta-value">2026年3月1日</div></div>
+    <div class="meta-item"><div class="meta-label">最後更新</div><div class="meta-value">2026年2月27日</div></div>
+    <div class="meta-item"><div class="meta-label">聯絡方式</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> 概述</h2>
+    <p>Ai牧者（以下簡稱「本應用」）是一款以信仰為核心的行動應用程式，提供AI驅動的聖經研讀、每日靈糧和屬靈陪伴服務。我們致力於保護您的隱私，以透明、負責任的方式處理您的個人資訊。</p>
+    <div class="highlight">聖經閱讀、AI對話、每日靈糧等核心功能無需註冊帳號即可使用。帳號註冊為選擇性，僅在需要跨裝置同步或訂閱進階功能時才需要。</div>
+  </section>
+
+  <section>
+    <h2><span class="icon">📦</span> 我們收集的資訊</h2>
+    <table class="data-table">
+      <thead><tr><th>類別</th><th>收集的資料</th><th>用途</th></tr></thead>
+      <tbody>
+        <tr><td><strong>帳號資料</strong>（選擇性）</td><td>電子郵件、顯示名稱、登入方式</td><td>帳號建立與身份驗證</td></tr>
+        <tr><td><strong>內容資料</strong></td><td>收藏經文、經文筆記、禱告日記、AI對話紀錄</td><td>已登入時跨裝置同步；未登入時僅儲存於本機</td></tr>
+        <tr><td><strong>使用偏好</strong></td><td>語言、主題、字體大小、通知設定</td><td>個人化使用體驗</td></tr>
+        <tr><td><strong>推播權杖</strong></td><td>裝置推播通知權杖</td><td>發送每日靈糧提醒（僅在您開啟通知時）</td></tr>
+        <tr><td><strong>訂閱資料</strong></td><td>訂閱方案、到期日期、付款狀態</td><td>管理進階功能存取權限</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="icon">⚙️</span> 資訊使用方式</h2>
+    <p>您的資訊僅用於營運和改善Ai牧者。我們<strong>不會</strong>出售、出租或以任何行銷目的向第三方共享您的個人資訊。應用程式內不含任何廣告。</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🤝</span> 第三方服務</h2>
+    <table class="data-table">
+      <thead><tr><th>服務</th><th>用途</th><th>共享的資料</th></tr></thead>
+      <tbody>
+        <tr><td>OpenAI / LLM 服務商</td><td>AI對話與靈糧生成</td><td>您的訊息文字（不與身份關聯）</td></tr>
+        <tr><td>Microsoft Azure</td><td>文字轉語音朗讀</td><td>待朗讀的文字內容</td></tr>
+        <tr><td>Expo（推播通知）</td><td>推播通知投遞</td><td>裝置推播權杖</td></tr>
+        <tr><td>Apple Sign In</td><td>身份驗證</td><td>Apple提供的使用者識別碼和郵箱</td></tr>
+        <tr><td>Google Sign In</td><td>身份驗證</td><td>Google提供的使用者識別碼和郵箱</td></tr>
+        <tr><td>Stripe</td><td>訂閱付款處理</td><td>付款資訊（完全由Stripe處理）</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="icon">✅</span> 您的權利</h2>
+    <table class="data-table">
+      <thead><tr><th>權利</th><th>行使方式</th></tr></thead>
+      <tbody>
+        <tr><td>存取您的資料</td><td>發送郵件至 aaroncloupor@gmail.com</td></tr>
+        <tr><td>更正不準確的資料</td><td>在應用程式的「設定 > 個人資料」中更新</td></tr>
+        <tr><td>刪除帳號和資料</td><td>設定 > 帳號 > 刪除帳號</td></tr>
+        <tr><td>關閉推播通知</td><td>應用程式內「設定 > 通知」或裝置系統設定</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> 聯絡我們</h2>
+    <p>如有任何疑問，請聯絡：</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     ESPAÑOL
+════════════════════════════════════════ -->
+<div id="lang-es" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">Nombre de la App</div><div class="meta-value">Ai Shepherd (Ai牧者)</div></div>
+    <div class="meta-item"><div class="meta-label">Fecha de vigencia</div><div class="meta-value">1 de marzo de 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Última actualización</div><div class="meta-value">27 de febrero de 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Contacto</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+  <section>
+    <h2><span class="icon">📋</span> Descripción General</h2>
+    <p>Ai Shepherd es una aplicación móvil de fe que ofrece estudio bíblico con IA, devocionales diarios y acompañamiento espiritual. Estamos comprometidos con la protección de su privacidad y el manejo transparente de su información personal.</p>
+    <div class="highlight">Las funciones principales como la lectura bíblica, la conversación con IA y los devocionales diarios están disponibles sin crear una cuenta. El registro de cuenta es opcional.</div>
+  </section>
+  <section>
+    <h2><span class="icon">📦</span> Información que Recopilamos</h2>
+    <table class="data-table">
+      <thead><tr><th>Categoría</th><th>Datos Recopilados</th><th>Propósito</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Datos de Cuenta</strong> (opcional)</td><td>Correo electrónico, nombre, método de inicio de sesión</td><td>Creación de cuenta y autenticación</td></tr>
+        <tr><td><strong>Datos de Contenido</strong></td><td>Versículos guardados, notas, diario de oración, historial de IA</td><td>Sincronización entre dispositivos</td></tr>
+        <tr><td><strong>Preferencias</strong></td><td>Idioma, tema, tamaño de fuente, notificaciones</td><td>Personalizar la experiencia</td></tr>
+        <tr><td><strong>Token de Notificaciones</strong></td><td>Token del dispositivo</td><td>Enviar recordatorios devocionales</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2><span class="icon">✅</span> Sus Derechos</h2>
+    <p>Puede acceder, corregir o eliminar sus datos en cualquier momento. Para eliminar su cuenta, vaya a Configuración > Cuenta > Eliminar Cuenta. Para otras solicitudes, contáctenos en <strong>aaroncloupor@gmail.com</strong>.</p>
+  </section>
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> Contáctenos</h2>
+    <p>Para preguntas sobre esta política de privacidad:</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     FRANÇAIS
+════════════════════════════════════════ -->
+<div id="lang-fr" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">Nom de l'App</div><div class="meta-value">Ai Shepherd (Ai牧者)</div></div>
+    <div class="meta-item"><div class="meta-label">Date d'entrée en vigueur</div><div class="meta-value">1er mars 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Dernière mise à jour</div><div class="meta-value">27 février 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Contact</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+  <section>
+    <h2><span class="icon">📋</span> Présentation</h2>
+    <p>Ai Shepherd est une application mobile de foi offrant l'étude biblique assistée par IA, des dévotions quotidiennes et un accompagnement spirituel. Nous nous engageons à protéger votre vie privée et à traiter vos informations personnelles avec transparence.</p>
+    <div class="highlight">Les fonctionnalités principales telles que la lecture biblique, la conversation IA et les dévotions quotidiennes sont disponibles sans créer de compte. L'inscription est facultative.</div>
+  </section>
+  <section>
+    <h2><span class="icon">📦</span> Informations Collectées</h2>
+    <table class="data-table">
+      <thead><tr><th>Catégorie</th><th>Données Collectées</th><th>Finalité</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Données de Compte</strong> (optionnel)</td><td>Email, nom d'affichage, méthode de connexion</td><td>Création de compte et authentification</td></tr>
+        <tr><td><strong>Données de Contenu</strong></td><td>Versets sauvegardés, notes, journal de prière, historique IA</td><td>Synchronisation entre appareils</td></tr>
+        <tr><td><strong>Préférences</strong></td><td>Langue, thème, taille de police, notifications</td><td>Personnaliser l'expérience</td></tr>
+        <tr><td><strong>Token de Notification</strong></td><td>Token de l'appareil</td><td>Envoyer des rappels dévotionnels</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2><span class="icon">✅</span> Vos Droits</h2>
+    <p>Vous pouvez accéder, corriger ou supprimer vos données à tout moment. Pour supprimer votre compte : Paramètres > Compte > Supprimer le compte. Pour toute autre demande, contactez-nous à <strong>aaroncloupor@gmail.com</strong>.</p>
+  </section>
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> Nous Contacter</h2>
+    <p>Pour toute question concernant cette politique de confidentialité :</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     DEUTSCH
+════════════════════════════════════════ -->
+<div id="lang-de" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">App-Name</div><div class="meta-value">Ai Shepherd (Ai牧者)</div></div>
+    <div class="meta-item"><div class="meta-label">Gültig ab</div><div class="meta-value">1. März 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Zuletzt aktualisiert</div><div class="meta-value">27. Februar 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Kontakt</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+  <section>
+    <h2><span class="icon">📋</span> Übersicht</h2>
+    <p>Ai Shepherd ist eine glaubensbasierte mobile App, die KI-gestütztes Bibelstudium, tägliche Andachten und geistliche Begleitung bietet. Wir verpflichten uns zum Schutz Ihrer Privatsphäre und zur transparenten Verarbeitung Ihrer personenbezogenen Daten.</p>
+    <div class="highlight">Kernfunktionen wie Bibellesen, KI-Gespräche und tägliche Andachten sind ohne Konto verfügbar. Die Kontoregistrierung ist optional.</div>
+  </section>
+  <section>
+    <h2><span class="icon">📦</span> Erhobene Daten</h2>
+    <table class="data-table">
+      <thead><tr><th>Kategorie</th><th>Erhobene Daten</th><th>Zweck</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Kontodaten</strong> (optional)</td><td>E-Mail, Anzeigename, Anmeldemethode</td><td>Kontoerstellung und Authentifizierung</td></tr>
+        <tr><td><strong>Inhaltsdaten</strong></td><td>Gespeicherte Verse, Notizen, Gebetstagebuch, KI-Verlauf</td><td>Geräteübergreifende Synchronisation</td></tr>
+        <tr><td><strong>Einstellungen</strong></td><td>Sprache, Design, Schriftgröße, Benachrichtigungen</td><td>Personalisierung</td></tr>
+        <tr><td><strong>Push-Token</strong></td><td>Geräte-Push-Token</td><td>Tägliche Andachtserinnerungen</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2><span class="icon">✅</span> Ihre Rechte</h2>
+    <p>Sie können Ihre Daten jederzeit einsehen, korrigieren oder löschen. Zum Löschen Ihres Kontos: Einstellungen > Konto > Konto löschen. Für weitere Anfragen kontaktieren Sie uns unter <strong>aaroncloupor@gmail.com</strong>.</p>
+  </section>
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> Kontakt</h2>
+    <p>Bei Fragen zu dieser Datenschutzrichtlinie:</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     PORTUGUÊS
+════════════════════════════════════════ -->
+<div id="lang-pt" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">Nome do App</div><div class="meta-value">Ai Shepherd (Ai牧者)</div></div>
+    <div class="meta-item"><div class="meta-label">Data de vigência</div><div class="meta-value">1 de março de 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Última atualização</div><div class="meta-value">27 de fevereiro de 2026</div></div>
+    <div class="meta-item"><div class="meta-label">Contato</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+  <section>
+    <h2><span class="icon">📋</span> Visão Geral</h2>
+    <p>Ai Shepherd é um aplicativo móvel de fé que oferece estudo bíblico com IA, devocionais diários e acompanhamento espiritual. Estamos comprometidos com a proteção da sua privacidade e o tratamento transparente das suas informações pessoais.</p>
+    <div class="highlight">Funcionalidades principais como leitura bíblica, conversa com IA e devocionais diários estão disponíveis sem criar uma conta. O registro de conta é opcional.</div>
+  </section>
+  <section>
+    <h2><span class="icon">📦</span> Informações Coletadas</h2>
+    <table class="data-table">
+      <thead><tr><th>Categoria</th><th>Dados Coletados</th><th>Finalidade</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Dados de Conta</strong> (opcional)</td><td>E-mail, nome de exibição, método de login</td><td>Criação de conta e autenticação</td></tr>
+        <tr><td><strong>Dados de Conteúdo</strong></td><td>Versículos salvos, notas, diário de oração, histórico de IA</td><td>Sincronização entre dispositivos</td></tr>
+        <tr><td><strong>Preferências</strong></td><td>Idioma, tema, tamanho de fonte, notificações</td><td>Personalizar a experiência</td></tr>
+        <tr><td><strong>Token de Notificação</strong></td><td>Token do dispositivo</td><td>Enviar lembretes devocionais</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2><span class="icon">✅</span> Seus Direitos</h2>
+    <p>Você pode acessar, corrigir ou excluir seus dados a qualquer momento. Para excluir sua conta: Configurações > Conta > Excluir Conta. Para outras solicitações, entre em contato em <strong>aaroncloupor@gmail.com</strong>.</p>
+  </section>
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> Contate-nos</h2>
+    <p>Para dúvidas sobre esta política de privacidade:</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     한국어
+════════════════════════════════════════ -->
+<div id="lang-ko" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">앱 이름</div><div class="meta-value">Ai Shepherd (Ai牧者)</div></div>
+    <div class="meta-item"><div class="meta-label">시행일</div><div class="meta-value">2026년 3월 1일</div></div>
+    <div class="meta-item"><div class="meta-label">최종 업데이트</div><div class="meta-value">2026년 2월 27일</div></div>
+    <div class="meta-item"><div class="meta-label">문의</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+  <section>
+    <h2><span class="icon">📋</span> 개요</h2>
+    <p>Ai Shepherd는 AI 기반 성경 공부, 매일 묵상, 영적 동반을 제공하는 신앙 기반 모바일 앱입니다. 저희는 귀하의 개인정보를 투명하고 책임감 있게 처리하기 위해 최선을 다합니다.</p>
+    <div class="highlight">성경 읽기, AI 대화, 매일 묵상 등 핵심 기능은 계정 없이 사용할 수 있습니다. 계정 등록은 선택 사항입니다.</div>
+  </section>
+  <section>
+    <h2><span class="icon">📦</span> 수집하는 정보</h2>
+    <table class="data-table">
+      <thead><tr><th>항목</th><th>수집 데이터</th><th>목적</th></tr></thead>
+      <tbody>
+        <tr><td><strong>계정 데이터</strong> (선택)</td><td>이메일, 표시 이름, 로그인 방법</td><td>계정 생성 및 인증</td></tr>
+        <tr><td><strong>콘텐츠 데이터</strong></td><td>저장된 구절, 노트, 기도 일기, AI 대화 기록</td><td>기기 간 동기화</td></tr>
+        <tr><td><strong>사용 설정</strong></td><td>언어, 테마, 글꼴 크기, 알림 설정</td><td>개인화된 경험 제공</td></tr>
+        <tr><td><strong>푸시 토큰</strong></td><td>기기 푸시 알림 토큰</td><td>매일 묵상 알림 전송</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2><span class="icon">✅</span> 귀하의 권리</h2>
+    <p>언제든지 데이터에 접근, 수정 또는 삭제할 수 있습니다. 계정 삭제: 설정 > 계정 > 계정 삭제. 기타 요청은 <strong>aaroncloupor@gmail.com</strong>으로 문의하세요.</p>
+  </section>
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> 문의하기</h2>
+    <p>개인정보 처리방침에 대한 문의:</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     日本語
+════════════════════════════════════════ -->
+<div id="lang-ja" class="lang-section">
+  <div class="meta-box">
+    <div class="meta-item"><div class="meta-label">アプリ名</div><div class="meta-value">Ai Shepherd (Ai牧者)</div></div>
+    <div class="meta-item"><div class="meta-label">発効日</div><div class="meta-value">2026年3月1日</div></div>
+    <div class="meta-item"><div class="meta-label">最終更新</div><div class="meta-value">2026年2月27日</div></div>
+    <div class="meta-item"><div class="meta-label">お問い合わせ</div><div class="meta-value">aaroncloupor@gmail.com</div></div>
+  </div>
+  <section>
+    <h2><span class="icon">📋</span> 概要</h2>
+    <p>Ai Shepherdは、AI搭載の聖書学習、毎日のデボーション、スピリチュアルな伴走を提供する信仰ベースのモバイルアプリです。お客様のプライバシーを保護し、個人情報を透明かつ責任を持って取り扱うことをお約束します。</p>
+    <div class="highlight">聖書読書、AI会話、毎日のデボーションなどの主要機能はアカウントなしでご利用いただけます。アカウント登録は任意です。</div>
+  </section>
+  <section>
+    <h2><span class="icon">📦</span> 収集する情報</h2>
+    <table class="data-table">
+      <thead><tr><th>カテゴリ</th><th>収集データ</th><th>目的</th></tr></thead>
+      <tbody>
+        <tr><td><strong>アカウントデータ</strong>（任意）</td><td>メールアドレス、表示名、ログイン方法</td><td>アカウント作成と認証</td></tr>
+        <tr><td><strong>コンテンツデータ</strong></td><td>保存した聖句、ノート、祈りの日記、AI会話履歴</td><td>デバイス間の同期</td></tr>
+        <tr><td><strong>使用設定</strong></td><td>言語、テーマ、フォントサイズ、通知設定</td><td>パーソナライズされた体験</td></tr>
+        <tr><td><strong>プッシュトークン</strong></td><td>デバイスのプッシュ通知トークン</td><td>毎日のデボーションリマインダー送信</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2><span class="icon">✅</span> お客様の権利</h2>
+    <p>いつでもデータへのアクセス、修正、削除が可能です。アカウント削除：設定 > アカウント > アカウントを削除。その他のご要望は <strong>aaroncloupor@gmail.com</strong> までお問い合わせください。</p>
+  </section>
+  <div class="contact-box">
+    <h2><span class="icon">📬</span> お問い合わせ</h2>
+    <p>このプライバシーポリシーに関するご質問：</p>
+    <p style="margin-top:12px; font-size:17px;"><a href="mailto:aaroncloupor@gmail.com">aaroncloupor@gmail.com</a></p>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <p>© 2026 Ai Shepherd (Ai牧者). All rights reserved.</p>
+  <p style="margin-top:6px;">This page is available at a permanent public URL for App Store and Google Play compliance.</p>
+</footer>
+
+<script>
+  const titles = {
+    en: { title: "Privacy Policy", subtitle: "Effective March 1, 2026 · Last updated February 27, 2026" },
+    "zh-hans": { title: "隐私政策", subtitle: "生效日期：2026年3月1日 · 最后更新：2026年2月27日" },
+    "zh-hant": { title: "隱私政策", subtitle: "生效日期：2026年3月1日 · 最後更新：2026年2月27日" },
+    es: { title: "Política de Privacidad", subtitle: "Vigente desde el 1 de marzo de 2026 · Última actualización: 27 de febrero de 2026" },
+    fr: { title: "Politique de Confidentialité", subtitle: "En vigueur le 1er mars 2026 · Dernière mise à jour : 27 février 2026" },
+    de: { title: "Datenschutzrichtlinie", subtitle: "Gültig ab 1. März 2026 · Zuletzt aktualisiert: 27. Februar 2026" },
+    pt: { title: "Política de Privacidade", subtitle: "Vigente a partir de 1 de março de 2026 · Última atualização: 27 de fevereiro de 2026" },
+    ko: { title: "개인정보 처리방침", subtitle: "2026년 3월 1일부터 적용 · 최종 업데이트: 2026년 2월 27일" },
+    ja: { title: "プライバシーポリシー", subtitle: "2026年3月1日発効 · 最終更新：2026年2月27日" },
+  };
+
+  function switchLang(lang) {
+    document.querySelectorAll(".lang-section").forEach(el => el.classList.remove("active"));
+    document.querySelectorAll(".lang-btn").forEach(el => el.classList.remove("active"));
+    document.getElementById("lang-" + lang).classList.add("active");
+    event.target.classList.add("active");
+    const t = titles[lang];
+    if (t) {
+      document.getElementById("page-title").textContent = t.title;
+      document.getElementById("page-subtitle").textContent = t.subtitle;
+      document.documentElement.lang = lang;
+    }
+  }
+
+  // Auto-detect browser language
+  const browserLang = navigator.language.toLowerCase();
+  if (browserLang.startsWith("zh-hant") || browserLang === "zh-tw" || browserLang === "zh-hk") {
+    document.querySelector('[onclick="switchLang(\'zh-hant\')"]').click();
+  } else if (browserLang.startsWith("zh")) {
+    document.querySelector('[onclick="switchLang(\'zh-hans\')"]').click();
+  } else if (browserLang.startsWith("es")) {
+    document.querySelector('[onclick="switchLang(\'es\')"]').click();
+  } else if (browserLang.startsWith("fr")) {
+    document.querySelector('[onclick="switchLang(\'fr\')"]').click();
+  } else if (browserLang.startsWith("de")) {
+    document.querySelector('[onclick="switchLang(\'de\')"]').click();
+  } else if (browserLang.startsWith("pt")) {
+    document.querySelector('[onclick="switchLang(\'pt\')"]').click();
+  } else if (browserLang.startsWith("ko")) {
+    document.querySelector('[onclick="switchLang(\'ko\')"]').click();
+  } else if (browserLang.startsWith("ja")) {
+    document.querySelector('[onclick="switchLang(\'ja\')"]').click();
+  }
+</script>
+</body>
+</html>
